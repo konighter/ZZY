@@ -1,0 +1,27 @@
+<!-- Fixed navbar -->
+<div class="navbar navbar-inverse navbar-fixed-top headroom" >
+    <div class="container">
+        <div class="navbar-header">
+            <!-- Button for smallest screens -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            <a class="navbar-brand" href="/"><img src="/images/logo.png" alt="Progressus HTML5 template"></a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav pull-right">
+                <li @{if model.current === 'home'} class="active" @{endif}><a href="#">首 页</a></li>
+                <li @{if model.current === 'positon'} class="active" @{endif}><a href="about.html">职 位</a></li>
+                <li @{if model.current === 'service'} class="active" @{endif}><a href="about.html">服 务</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">More Pages <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="sidebar-left.html">Left Sidebar</a></li>
+                        <li class="active"><a href="sidebar-right.html">Right Sidebar</a></li>
+                    </ul>
+                </li>
+                <li @{if model.current === 'contact'} class="active" @{endif}><a href="contact.html">联系我们</a></li>
+                <li @{if model.current === 'join'} class="active" @{endif}><a class="btn" href="signin.html">登录 / 注册</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</div>
+<!-- /.navbar -->

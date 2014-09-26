@@ -5,18 +5,39 @@
     <meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=10" />
 	<meta name="format-detection" content="telephone=no" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<meta name="robots" content="all,follow" />
-	@{head}
-	@{css('default.css')}
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	@{js('default.js')}
-	@{favicon('favicon.ico')}
+    <meta name="viewport"    content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="招聘,众包,威客,猎头兼职,企业招聘,互联网招聘">
+    <meta name="author"      content="新锐招聘">
+
+    <!-- Custom styles for our template -->
+    <link rel="shortcut icon" href="/images/gt_favicon.png">
+    <!--
+        http://fonts.googleapis.com/css
+     -->
+    <link rel="stylesheet" media="screen" href="/css/google-font.css">
+    <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+
+    <!-- Custom styles for our template -->
+    <link rel="stylesheet" href="/css/bootstrap-theme.css" media="screen" >
+    <link rel="stylesheet" href="/css/main.css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="/vendor/html5shiv/html5shiv.js"></script>
+    <script src="/vendor/respond/respond.min.js"></script>
+    <![endif]-->
+    @{favicon('favicon.ico')}
 </head>
 <body>
-	<div class="content">
-		@{body}
-	</div>
 
+        @{body}
+
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/vendor/headroom/headroom.min.js"></script>
+    <script src="/vendor/headroom/jQuery.headroom.min.js"></script>
+    @{place('scripts')}
 </body>
 </html>
