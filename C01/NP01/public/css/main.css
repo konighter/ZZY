@@ -86,3 +86,13 @@ img.pull-left { margin-right: 10px; }
     background: url( ../images/bg_header.jpg) no-repeat fixed;
     padding: 200px 0px;
 }
+
+body , html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.masterHeader {
+    height: 100%;
+}

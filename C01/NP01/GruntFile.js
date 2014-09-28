@@ -40,6 +40,7 @@ module.exports = function(grunt) {
                     { expand: true, cwd: '<%= pkg.jslib %>/backbone/', src: ['backbone.js'] , dest: '<%= pkg.jsvendor %>/backbone/', filter: 'isFile' },
                     { expand: true, cwd: '<%= pkg.jslib %>/requirejs/', src: ['require.js'] , dest: '<%= pkg.jsvendor %>/requirejs/', filter: 'isFile' },
                     { expand: true, cwd: '<%= pkg.jslib %>/underscore/', src: ['underscore.min.js'] , dest: '<%= pkg.jsvendor %>/backbone/', filter: 'isFile' },
+                    { expand: true, cwd: '<%= pkg.jslib %>/jqueryui/', src: ['jquery-ui.min.js'] , dest: '<%= pkg.jsvendor %>/jqueryui/', filter: 'isFile' },
                 ]
             }
         },
