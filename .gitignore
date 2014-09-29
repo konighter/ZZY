@@ -2,6 +2,8 @@
 /C01/NP01/public/lib/
 /C01/NP01/public/vendor/
 node_modules/
+bower_components/
 *.bak
 *.pid
 ~*
+tmp
