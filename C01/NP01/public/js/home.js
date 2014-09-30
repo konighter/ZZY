@@ -9,13 +9,15 @@ requirejs.config({
         fullpage   : '../js/jquery.fullPage.min',
         jqueryui    :'jqueryui/jquery-ui.min',
         backbone    :'backbone/backbone',
+        'nivo-slider'  :'nivo-slider/jquery.nivo.slider.pack',
     },
     shim : {
         bootstrap :['jquery'],
         fullpage  :['jquery','jqueryui'],
+        'nivo-slider' : ['jquery']
     }
 });
-requirejs(['jquery','fullpage'],function($){
+requirejs(['jquery','fullpage', 'nivo-slider'],function($){
 
     $(document).ready(function() {
 
@@ -23,6 +25,7 @@ requirejs(['jquery','fullpage'],function($){
             anchors: ['home', 'service', 'further', 'contact', 'join'],
             menu: '#menu',
         });
+        $('#slider').nivoSlider();
     });
 
 });
