@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    @{meta}
+    <meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=10" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="robots" content="all,follow" />
+    <meta name="viewport"    content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="招聘,众包,威客,猎头兼职,企业招聘,互联网招聘">
+
+    <meta name="author"      content="新锐招聘">
+
+    <link rel="shortcut icon" href="/images/gt_favicon.png">
+    <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="/dashboard/css/styles.css">
+    <link rel="stylesheet" href="/dashboard/css/customer.css">
+
+
+    @{section('mycss')}
+    <style>
+        @{section('css')}
+    </style>
+
+    @{favicon('favicon.ico')}
+</head>
+<body>
+
+        @{body}
+
+    <!--<script src="/vendor/jquery/jquery.min.js"></script>-->
+    <!--<script src="/vendor/bootstrap/js/bootstrap.min.js"></script>-->
+    <!--<script src="/vendor/headroom/headroom.min.js"></script>-->
+    <!--<script src="/vendor/headroom/jQuery.headroom.min.js"></script>-->
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/dashboard/js/plugins/forms/jquery.tagsinput.min.js"></script>
+    <script src="/dashboard/js/functions.js"></script>
+    @{place('scripts')}
+</body>
+</html>

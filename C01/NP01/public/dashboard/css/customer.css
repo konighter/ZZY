@@ -1,0 +1,48 @@
+.secNavHeader {
+    margin-top: 20px;
+    line-height: 16px;
+    text-align: center;
+}
+.secNavHeader li {
+    display: block;
+    float: left;
+    border-right: 1px solid #d9d9d9;
+    width: 50%;
+    font-size: 30px;
+    position: relative;
+}
+.secNavHeader li a>span {
+    color: #ba6f37;
+}
+
+.secNavHeader li > span {
+    padding: 0 2px 2px 2px;
+    position: absolute;
+    right: 25px;
+    top: -10px;
+    display: block;
+    text-align: center;
+    -webkit-border-bottom-left-radius: 2px;
+}
+
+.secNavHeader li > span > strong {
+    font-size: 11px;
+    font-weight: bold;
+    display: block;
+    padding: 0px 5px;
+    color: white;
+    line-height: 17px;
+    height: 16px;
+    white-space: nowrap;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    background: #DA8854;
+    background: -moz-linear-gradient(top, #DA8854 0%, #C35A32 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#DA8854), color-stop(100%,#C35A32));
+    background: -webkit-linear-gradient(top, #DA8854 0%,#C35A32 100%);
+    background: -o-linear-gradient(top, #DA8854 0%,#C35A32 100%);
+    background: -ms-linear-gradient(top, #DA8854 0%,#C35A32 100%);
+    background: linear-gradient(top, #DA8854 0%,#C35A32 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#da8854', endColorstr='#c35a32',GradientType=0 );
+}
