@@ -3,3 +3,4 @@ default-port                    : 8000
 
 version                         : 1.01
 secret                          : secret-key-for-web
+cookie							: __user
